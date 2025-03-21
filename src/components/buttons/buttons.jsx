@@ -3,8 +3,8 @@ import RandomFirst from "../../assets/random1.svg"
 import RandomSecond from "../../assets/random2.svg"
 import PreviousImg from "../../assets/previous.svg"
 import NextImg from "../../assets/next.svg"
-
-function Buttons({randomSelect, randomize, onNext, onPrevious}) {
+import Reset from "../../assets/reset.svg"
+function Buttons({randomSelect, randomize, onNext, onPrevious, reset}) {
     return (
         <div className={styles.container}>
             <button className={styles.image} onClick={onPrevious} >
@@ -19,6 +19,9 @@ function Buttons({randomSelect, randomize, onNext, onPrevious}) {
             </button>
             <button className={styles.image} onClick={onNext} >
                 <img className={styles.image} src={NextImg} />
+            </button>
+            <button className={styles.image} onClick={reset} >
+                <img className={styles.image} src={Reset}  />
             </button>
         </div>
     );

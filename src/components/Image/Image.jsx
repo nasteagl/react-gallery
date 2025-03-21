@@ -6,6 +6,7 @@ function Image({image,onClick}){
             onClick={onClick}
             className={`${styles.container}${image.isSelected ? ' is-selected' : ""}`}
             >
+            {/*<p className={styles.imageTitle}>{image.title}</p>*/}
             <img src={image.url} className={styles.image} alt={image.title}/>
         </div>
     )

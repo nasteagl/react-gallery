@@ -14,7 +14,17 @@
     aspect-ratio: 16/9;  /* proportia 16/9  dimensiunea la poza  */
 }
 
-.selected{
-    border: 2px solid #00fe44;
+.isSelected{
+    border: 2rem solid #00fe44;
+    transform: scale(2%);
 }
 
+.imageTitle{
+    text-align: start;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+
+
+
+}

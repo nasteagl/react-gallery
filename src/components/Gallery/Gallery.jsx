@@ -5,15 +5,17 @@ import styles from "./Gallery.module.css";
 import images from "../../data/images.json";
 import {useState} from "react";
 
-
+//initializare lista de imagini si am pus ca prima imagina sa fie marcata ca selectata
 const InitializeImage=images.map((image,index)=>{
     return {...image, isSelected:index===0,};
 });
 
 function Gallery(){
+    //definare pentru lista de imagini si imaginea selectata
     const[images,setImage]=useState(InitializeImage);
     const[selectedImage,setSelectedImage]=useState(images[0]);
 
+    //cand se face click imaginea se schimba
 function handleClick(id) {
     const newImage = images.map((image)=>{
         if(image.id===id){
@@ -47,6 +49,10 @@ function handleClick(id) {
     handleClick(images[prevIndex].id);
   }
 
+  function resetImage(){
+    handleClick(images[0].id);
+  }
+
   return(
       <>
           <MainImage image={selectedImage}/>
@@ -55,6 +61,7 @@ function handleClick(id) {
               randomSelect={selectRandomImage}
               randomize={randomizeImage}
               onNext={nextImage}
+              reset={resetImage}
 
 
           />
