@@ -1,5 +1,9 @@
+import Gallery from "./components/Gallery/Gallery.jsx";
+
 function App() {
-    return <></>;
+    return <>
+    <Gallery/>
+    </>;
 }
 
 export default App;

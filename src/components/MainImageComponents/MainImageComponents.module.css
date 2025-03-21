@@ -1,0 +1,14 @@
+.container{
+    margin-top : 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width:max(45% , 25rem); /*minim 25 rem si max 45% din container*/
+    aspect-ratio: 16/9;
+    object-fit: cover; /*imaginea in caz de deformare va umble containerul*/
+    user-select: none;
+    padding : 1rem;
+    border: 1.2rem solid black;
+}

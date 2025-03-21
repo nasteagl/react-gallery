@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+
+}
+
+.button{
+    cursor: pointer;
+    padding: 2rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    all: unset;
+
+}
+
+.button:hover{
+    background-color: deeppink;
+}
+
+.image{
+    width: 3rem;
+}

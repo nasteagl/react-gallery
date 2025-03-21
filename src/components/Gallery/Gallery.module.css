@@ -1,0 +1,7 @@
+.imageList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    padding: 2rem;
+    border: 1px solid black;
+}
